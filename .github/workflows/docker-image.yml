@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag odoo:$(date +%s)
+      run: docker build . --file 16.0/Dockerfile --tag odoo:$(date +%s)
